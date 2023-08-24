@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+<title>Study</title>
+</head>
+<body><h1 id='小白学习记录'>小白学习记录</h1>
+<h2 id='python'>Python</h2>
+<!--date: 20230824-->
+<!--啊啊啊 Jupyter呈现结果好帅气！ -->
+<p>JupyterLab：<a href='https://notebooks.gesis.org/binder/jupyter/user/jupyterlab-jupyterlab-demo-a0uhua7p/lab/tree/RTC%3Ademo' target='_blank' class='url'>https://notebooks.gesis.org/binder/jupyter/user/jupyterlab-jupyterlab-demo-a0uhua7p/lab/tree/RTC%3Ademo</a> 需要登陆</p>
+<details><summary>JupyterLite官网<br></summary></summary><iframe height='500' src='https://jupyter.org/try-jupyter/lab/?path=notebooks%2FIntro.ipynb'></iframe></details>
+<p>Python样例1（绘图）</p>
+<pre><code class='language-python' lang='python'>from matplotlib import pyplot as plt
+import numpy as np
+
+# 生成原始三维数据点
+x, y, scale = np.random.randn(3, 100)
+fig, ax = plt.subplots()
+
+# 三维数据平面呈现——xy坐标+颜色和大小
+ax.scatter(x=x, y=y, c=scale, s=np.abs(scale)*500)
+ax.set(title=&quot;标题设置&quot;)
+plt.show()
+</code></pre>
+<p>Python绘图包matplotlib：<a href='https://matplotlib.org/' target='_blank' class='url'>https://matplotlib.org/</a></p>
+<details><summary>散点图</summary>
+坐标轴 x= ,y=<br>
+颜色 c=<br>
+大小 s=<br>
+  <br>
+  <iframe height='300' src='https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.subplot.html#matplotlib.pyplot.subplot'></iframe>
+</details>
+<pre><code class='language-python' lang='python'>axes.scatter(self, x, y, s, c, marker, cmap, norm, vmin, vmax, alpha, linewidths, edgecolors, plotnonfinite, **kwargs)
+</code></pre>
+<details><summary>子图排布</summary>
+行 nrows= int<br>
+列 ncols= int<br>
+位置 index= int<br>
+  <br>
+<iframe height='300' src='https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.subplot.html#matplotlib.pyplot.subplot'></iframe>
+</details>
+<p>官网样例包含颜色、排版、标题、标注……设置方法</p>
+<pre><code class='language-python' lang='python'>matplotlib.pyplot.subplot(nrows, ncols, index, **kwargs)
+</code></pre>
+<p>ToDo:</p>
+<ul>
+<li><input type='checkbox' /><p>Lorenz.ipynb</p>
+</li>
+
+</ul>
+<h2 id='typora'>Typora</h2>
+<!--date: 20230824-->
+<p>Markdown 简易语法表：<a href='https://www.markdownguide.org/cheat-sheet/' target='_blank' class='url'>https://www.markdownguide.org/cheat-sheet/</a></p>
+<p>Markdown 嵌套网页</p>
+<!--也太酷了啊啊啊
+突然明白那个帅气的Presentation怎么整了
+就说本质上还是要学会用工具！！！
+If there's something that others already did, since you're all humanbeing, theoretically, you could also reproduce it~-->
+<details><summary>支持iframe的网页</summary><br><iframe height = '300'  src = 'https://support.typora.io/Markdown-Reference/'></iframe></details>
+<details><summary>只支持Javascript的网页</summary><br>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Sunsets don&#39;t get much better than this one over <a href="https://twitter.com/GrandTetonNPS?ref_src=twsrc%5Etfw">@GrandTetonNPS</a>. <a href="https://twitter.com/hashtag/nature?src=hash&amp;ref_src=twsrc%5Etfw">#nature</a> <a href="https://twitter.com/hashtag/sunset?src=hash&amp;ref_src=twsrc%5Etfw">#sunset</a> <a href="http://t.co/YuKy2rcjyU">pic.twitter.com/YuKy2rcjyU</a></p>&mdash; US Department of the Interior (@Interior) <a href="https://twitter.com/Interior/status/463440424141459456?ref_src=twsrc%5Etfw">May 5, 2014</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</details>
+<p>&nbsp;</p>
+<p>Markdown嵌套视频</p>
+<pre><code class='language-html' lang='html'>&lt;video src=&quot;xxx.mp4&quot; /&gt;
+</code></pre>
+<p>&nbsp;</p>
+<p>Markdown嵌套音频
+<!--有声播客get--></p>
+<pre><code class='language-html' lang='html'>&lt;audio src=&quot;xxx.mp3&quot; /&gt;
+</code></pre>
+<p>&nbsp;</p>
+<p>Markdown隐藏评论
+<!--完美满足碎碎念需求！--></p>
+<pre><code class='language-markdown' lang='markdown'>&lt;!--Here are the comments--&gt;
+They will not shown by Preview or Export
+</code></pre>
+<p>&nbsp;</p>
+<p>Markdown隐藏内容详情</p>
+<details>
+<summary>Title</summary>
+Hidden Content
+</details>
+<pre><code class='language-html' lang='html'>&lt;details&gt;
+&lt;summary&gt;Title&lt;/summary&gt;
+Hidden Content
+&lt;/details&gt;
+</code></pre>
+<p>&nbsp;</p>
+<p>Markdown自动排版导出工具</p>
+<details><summary>VLook</summary><iframe height='500' src='https://madmaxchow.github.io/VLOOK/index.html'></iframe></details>
+<p>&nbsp;</p>
+<h2 id='web'>Web</h2>
+<!--date: 20230824-->
+<p>Web线上项目学习+练手网址：<a href='https://codepen.io' target='_blank' class='url'>https://codepen.io</a></p>
+<iframe height='265' scrolling='no' title='Fancy Animated SVG Menu' src='http://codepen.io/jeangontijo/embed/OxVywj/?height=265&theme-id=0&default-tab=css,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'></iframe>
+<p>&nbsp;</p>
+<h2 id='git'>Git</h2>
+<!--date: 20230824-->
+<p>GitHub官方文档：<a href='https://docs.github.com/en' target='_blank' class='url'>https://docs.github.com/en</a></p>
+<p>Git专业术语：<a href='https://docs.github.com/en/get-started/quickstart/github-glossary' target='_blank' class='url'>https://docs.github.com/en/get-started/quickstart/github-glossary</a></p>
+<figure class='table-figure'><table>
+<thead>
+<tr><th>Git概念</th><th>含义</th></tr></thead>
+<tbody><tr><td>branch</td><td>分支<br />操作：在主线外创建分支<br />意味着保护主线状态维持不变，只在支线尝试新的改动，最终结果可以并回主线</td></tr><tr><td>commit</td><td>提交<br />操作：提交更改以及更改信息<br />可以对更改进行确认，并记录更改内容和原因</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td></tr></tbody>
+</table></figure>
+<p>Git Tutorial：<a href='https://www.w3schools.com/git/git_getstarted.asp?remote=github' target='_blank' class='url'>https://www.w3schools.com/git/git_getstarted.asp?remote=github</a></p>
+<p>Git本地同步远端项目</p>
+<pre><code>git remote add origin URL
+</code></pre>
+<p>GitBlog</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+</html>
